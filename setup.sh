@@ -1,6 +1,12 @@
 #!/bin/bash
 
+WORKDIR=sls-workdir
+
 echo "=== SETUP serverless handson 2020 Envs ==="
+
+echo "-----> setup envs"
+echo "WORKDIR: $WORKDIR"
+echo
 
 echo "-----> check dev tools"
 for t in git curl npm node; do
@@ -9,8 +15,8 @@ done
 echo
 
 echo "-----> checkout repo"
-rm -rf workdir
-git clone git@github.com:ohr486/ServerlessHandsOn2020.git workdir
+rm -rf $WORKDIR
+git clone git@github.com:ohr486/ServerlessHandsOn2020.git $WORKDIR
 echo
 
 echo "-----> check versions"
