@@ -22,4 +22,3 @@ echo
 echo "-----> check versions"
 echo "npm: `npm --version`"
 echo "node: `node --version`"
-echo
