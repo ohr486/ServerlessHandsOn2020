@@ -16,7 +16,7 @@ echo
 
 echo "-----> checkout repo"
 rm -rf $WORKDIR
-git clone git@github.com:ohr486/ServerlessHandsOn2020.git $WORKDIR
+git clone https://github.com/ohr486/ServerlessHandsOn2019.git $WORKDIR
 echo
 
 echo "-----> check versions"
