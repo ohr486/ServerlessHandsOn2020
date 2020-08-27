@@ -25,21 +25,21 @@ functions:
           integration: lambda
 
 # 応用問題で利用
-#resources:
-#  Resources:
-#    DynamoDbTable:
-#      Type: 'AWS::DynamoDB::Table'
-#      Properties:
-#        AttributeDefinitions:
-#          -
-#            AttributeName: id
-#            AttributeType: S
-#        KeySchema:
-#          -
-#            AttributeName: id
-#            KeyType: HASH
-#        ProvisionedThroughput:
-#          ReadCapacityUnits: 1
-#          WriteCapacityUnits: 1
-#        # Table名を設定
-#        TableName: <YOUR TABLE NAME>
+resources:
+  Resources:
+    DynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        AttributeDefinitions:
+          -
+            AttributeName: id
+            AttributeType: S
+        KeySchema:
+          -
+            AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        # Table名を設定
+        TableName: <YOUR TABLE NAME>
