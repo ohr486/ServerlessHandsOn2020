@@ -16,8 +16,8 @@ functions:
 
   # リダイレクト関数
   redirect:
-    handler: redirect.handler
-    # handler: redirect2.handler # 応用問題はこちらを利用
+    # handler: redirect.handler
+    handler: redirect2.handler # 応用問題はこちらを利用
     events:
       - http:
           path: redirect
