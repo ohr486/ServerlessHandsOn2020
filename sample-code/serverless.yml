@@ -22,6 +22,7 @@ functions:
       - http:
           path: redirect
           method: get
+          integration: lambda
 
 # 応用問題で利用
 #resources:
