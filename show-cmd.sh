@@ -31,4 +31,3 @@ echo
 
 echo --- step.10 関数の削除 ---
 echo sls remove
-echo
